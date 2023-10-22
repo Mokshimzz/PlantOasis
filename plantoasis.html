@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Plant Oasis | Home</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Plant Oasis-logos/Screenshot from 2023-07-15 17-53-11.png" width="200px" height="70px" alt="Logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="plantoasis.html">Home</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="https://www.therightgardening.com/?m=1" target="_blank">Blog</a></li>
+                    </ul>
+                </nav>
+                <img src="Plant Oasis-logos/shopping-cart-icon-29083.png" width="35px" alt="cart">
+                <img src="Plant Oasis-logos/burger.png" class="menu" alt="menu" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give your garden/farm<br>A new style!</h1>
+                    <p id="content">Don't judge each day by the harvest you reap but by the seeds that you plant.<br>
+                        We assume trees have no plans<br>
+                        Other than to be trees,<br>
+                        Content to sway and listen<br>  
+                        In wistful rustle<br>
+                        <a href="https://www.therightgardening.com/?m=1" target="_blank"><button class="products-btn">Explore Now &hearts;</button></a></p>
+                </div>
+                <div class="col-2">
+                    <img src="Plant Oasis-logos/nurserylive-home-page-trending-bonsai-plants-new_515x515.webp" id="bonsai" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Featured-->
+    <div class="small-container" id="featured">
+        <div class="row"><h1>Featured</h1></div>
+        <hr>
+        <div class="categories">
+            <div class="row">
+                <div class="col-3">
+                    <img src="Plant Oasis-logos/gardening_tools_set_f653fd0d-9e56-49c6-9c96-a27963629350.webp" alt="Tools">
+                    <h2>Tools</h2>
+                </div>
+                <div class="col-3">
+                    <img src="Plant Oasis-logos/indoor-potted-houseplants-703b321a-81cf8e1f9aee48a28e1be3bbc45e4386.jpg" alt="Plants">
+                    <h2>Plants and Produce</h2>
+                </div>
+                <div class="col-3">
+                    <img src="Plant Oasis-logos/Plant-Food-Vs-Fertilizer-Theyre-Not-the-Same-Thing.jpg" alt="Supplements">
+                    <h2>Plant Supplements</h2>
+                </div>
+            </div>
+        </div>
+    
+
+    <!--Offer-->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                 <div class="col-2">
+                    <img src="Plant Oasis-logos/offer.webp" alt="Offer image" id="offer">
+                 </div>
+                 <div class="col-2">
+                    <h1>Automated Plant Watering Hub</h1>
+                    <p>Available exclusively on PlantOasis<br>
+                        <a href="#products"><button class="products-btn">Buy Now &RightArrow;</button></a></p>
+                    </p>
+                    
+                 </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--Brands-->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="Plant Oasis-logos/godrej.png" alt="godrej">
+                </div>
+                <div class="col-5">
+                    <img src="Plant Oasis-logos/paypal.png" alt="paypal" width="300px" height="150px">&nbsp;
+                </div>
+                <div class="col-5">
+                    <img src="Plant Oasis-logos/mahindra.png" alt="godrej" width="400px" height="200px">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download our app for android and ios</p>
+                    <div class="app-logo">
+                        <img src="Plant Oasis-logos/apple play.png" alt="Play store app store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Plant Oasis-logos/Screenshot from 2023-07-15 17-53-11.png" alt="logo">
+                    <p>Our purpose is to spark motivation in people to sow a seed,<br> and further foster a hobby for gardening</p>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Useful References</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>  
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="font-weight: bold; color: #fff;">&copy;2023, <a href="mailto:plantoasis@mokshim.com" style="font-weight: bold; color: #fff; text-decoration: underline;" target="_blank">Mokshim Gupta</p></a>
+        </div>
+    </div>
+
+</body>
+<!-- Js for toggle Menu :) -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</html>
